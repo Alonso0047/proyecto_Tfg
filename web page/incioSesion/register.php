@@ -1,7 +1,7 @@
 <?php
 // Conexión a la base de datos
 $host = 'localhost';
-$db = 'mi_aplicacion';
+$db = 'tienda';
 $user = 'tu_usuario';
 $pass = 'tu_contraseña';
 
