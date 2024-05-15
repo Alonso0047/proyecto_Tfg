@@ -2,8 +2,8 @@
 // Conexión a la base de datos
 $host = 'localhost';
 $db = 'tienda';
-$user = 'tu_usuario';
-$pass = 'tu_contraseña';
+$user = 'root';
+$pass = '';
 
 $conn = new mysqli($host, $user, $pass, $db);
 
