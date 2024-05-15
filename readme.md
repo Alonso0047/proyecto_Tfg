@@ -7,7 +7,7 @@ Este proyecto tiene como objetivo crear una plataforma de comercio electrónico 
 1. **Registro y Autenticación de Usuarios:** Sistema seguro para que los clientes creen cuentas y accedan a sus perfiles.
 2. **Catálogo de Productos:** Base de datos exhaustiva con imágenes, descripciones y precios competitivos.
 3. **Carrito de Compras:** Interfaz intuitiva para agregar, eliminar y modificar productos antes de comprar.
-4. **Proceso de Pago Seguro:** Integración de pasarelas de pago seguras.
+4. **Proceso de Pago Seguro con tarjeta:** Integración de pasarelas de pago seguras.
 5. **Gestión de Pedidos y Inventario:** Herramientas eficaces para administrar pedidos y mantener un registro del inventario.
 6. **Motor de Búsqueda Avanzado:** Búsqueda potente con filtros para encontrar productos rápidamente.
 7. **Comentarios y Valoraciones:** Función para que los clientes compartan experiencias y opiniones.
