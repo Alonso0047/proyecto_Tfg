@@ -1,7 +1,8 @@
 version: '3.8'
 
 services:
-# Base de datos
+  
+  # Base de datos
   mysql:
     image: mysql:latest
     container_name: mysql_container
@@ -14,7 +15,8 @@ services:
       - ./database/tienda.sql:/docker-entrypoint-initdb.d/init.sql
     ports:
       - "3306:3306"
-# Administra la base de datos y expone una web en 8080
+  
+  # Administra la base de datos y expone una web en 8080
   phpmyadmin:
     image: phpmyadmin/phpmyadmin:latest
     container_name: phpmyadmin_container
@@ -27,3 +29,15 @@ services:
       - "8080:80"
     depends_on:
       - mysql
+
+# Web server
+  web:
+    image: nginx:alpine
+    ports:
+      - "8081:80"
+    volumes:
+      - ./web page:/usr/share/nginx/html
+    restart: always
+    depends_on:
+      - mysql
+      - phpmyadmin
