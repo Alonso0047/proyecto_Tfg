@@ -30,7 +30,7 @@ services:
     depends_on:
       - mysql
 
-# Web server
+  # Web server
   web:
     image: nginx:alpine
     ports:
