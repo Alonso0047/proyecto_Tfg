@@ -19,7 +19,7 @@ Este proyecto tiene como objetivo crear una plataforma de comercio electrónico 
 *Nota: Estos aspectos pueden ser ajustados para mejorar la práctica.*
 
 
-## Database
+## Orchestration
 
 This directory contains the files related to the database.
 
@@ -29,8 +29,9 @@ The database is composed of two services:
 
 * ``mysql``: Database service using MySQL.
 * ``phpmyadmin``: Administration services using ``PhPMyAdmin``.
+* ``web``: Web server based on ngix. It might not be applicable because it might not have PhP support.
 
-### Launching the database.
+### Launching the containers.
 
 From the root of the directory, you need to run:
 
@@ -46,7 +47,7 @@ If you want to run this on the background use:
 docker-compose up -d
 ```
 
-### Stopping the database
+### Stopping the containers
 
 ```bash
 docker-compose down
