@@ -13,9 +13,9 @@ CREATE TABLE `productos` (
 
 -- Insertar datos de prueba en la tabla de productos
 INSERT INTO `productos` (`nombre`, `precio`, `descripcion`, `stock`) VALUES
-('Producto A', 19.99, 'Descripción del Producto A', 100),
-('Producto B', 29.99, 'Descripción del Producto B', 50),
-('Producto C', 39.99, 'Descripción del Producto C', 75);
+('Filtro de aire Bosch S0222', 19.99, 'Descripción del Producto A', 100),
+('Aceite de motor Castrol EDGE 5W-30 LL', 29.99, 'Descripción del Producto B', 50),
+('Pastillas de freno Brembo P 85 020', 39.99, 'Descripción del Producto C', 75);
 
 -- Crear tabla de usuarios
 CREATE TABLE `usuarios` (
@@ -29,7 +29,7 @@ CREATE TABLE `usuarios` (
 -- Insertar datos de prueba en la tabla de usuarios
 -- Nota: Las contraseñas deben ser almacenadas en forma de hash por seguridad. Aquí utilizamos el algoritmo bcrypt.
 INSERT INTO `usuarios` (`username`, `password`, `email`) VALUES
-('usuario1', '$2y$10$eW5n3//5k8Nk19puDyhz6O0ISFqZoa3mzHEp./h6Wp/aKcQSzBVeG', 'usuario1@example.com'),
-('usuario2', '$2y$10$dMO/j.T90dW2N1Qh9epFne2f1/eEkZQwX3s.qnJFDZUs5Nc3PbYWm', 'usuario2@example.com');
+('usuario1', 'contraseña1234', 'usuario1@example.com'),
+('usuario2', 'contraseña1234', 'usuario2@example.com');
 
 -- Las contraseñas hashadas corresponden a 'password1' y 'password2' respectivamente
